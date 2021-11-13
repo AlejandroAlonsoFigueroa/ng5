@@ -1,0 +1,48 @@
+
+<div class = "container">
+
+    <div class = "col"><h1>{{titulo}}</h1></div>
+    
+
+    <form class = "form-group row">
+        <div class= "form-group col-md-3">
+            <label for = "nombre">Nombre del empleado:</label>
+            <input type = "text" name = "nombre" id = "nombre" placeholder="Nombre" class = "form-control" [(ngModel)] = "cuadroNombre">
+        
+        
+        </div>
+
+        <div class= "form-group col-md-3">
+
+
+            <label for = "apellido">Apellido del empleado:</label>
+            <input type = "text" name = "apellido" id = "apellido" placeholder="Apellido" class = "form-control" [(ngModel)]= "cuadroApellido">
+        </div>
+
+        <div class= "form-group col-md-3">
+
+            <label for = "cargo">Cargo del empleado:</label>
+            <input type = "text" name = "cargo" id = "cargo" placeholder="Cargo" class = "form-control" [(ngModel)] = "cuadroCargo">
+        </div>
+
+
+        <div class= "form-group col-md-3">
+            <label for = "salario">Salario del empleado:</label>
+            <input type = "number" name = "salario" id = "salario"  class = "form-control" [(ngModel)] = "cuadroSalario">
+        </div>
+        
+        <br/> <br/>
+        <div class= "col">
+            <button type = "submit" (click) = "agregarEmpleado()">Pulsa aquí</button>
+
+
+        </div>
+
+        
+    </form>
+</div>
+
+
+<!--<app-listar-empleados *ngFor= "let empTemp of empleados; let contador= index" [empTemp] = "empTemp" [indice] = "contador"></app-listar-empleados>-->
+
+

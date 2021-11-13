@@ -1,0 +1,45 @@
+<h1 style = "text-align: center;">{{titulo}}</h1>
+
+
+<form>
+
+    <input type = "text" name = "nombre" [(ngModel)] = "nombre">
+    <br/>
+    <br/>
+    <input type = "text" name = "edad" [(ngModel)] = "apellido">
+    <br/>
+    <br/>
+    <input type = "submit" name = "boton" value = "Registrar usuario" (click) = "registrarUsuario()">
+
+
+
+
+
+
+
+</form>
+
+
+<br/>
+
+<!-- "else sinRegistrar" llamamos al identificador del ng-template, por tanto se carga el párrafo-->
+
+<p *ngIf= "registrado;  else sinRegistrar"> {{mensaje}} {{nombre}} {{apellido}}</p>
+
+
+<!-- un ng-template no se renderiza por defecto-->
+<ng-template #sinRegistrar>
+    <p>No hay nadie registrado</p>
+</ng-template>
+
+<br/>
+<br/>
+
+
+
+
+<ul>
+    <li *ngFor= "let entrada of entradas; let i= index">{{entrada.tit}} Entrada {{i+1}}</li>
+
+
+</ul>

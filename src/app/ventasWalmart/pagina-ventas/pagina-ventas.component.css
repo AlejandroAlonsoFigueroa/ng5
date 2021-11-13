@@ -1,0 +1,25 @@
+.selector{
+    position: absolute;
+    left: 800px;
+    top: 100px;
+}
+
+#bienvenido{
+    position: absolute;
+    left: 100px;
+    top: 100px;
+}
+
+#boton{
+    position: absolute;
+    left: 800px;
+    top: 200px;
+}
+
+#imagen1{
+    position:absolute;
+    left: 50px;
+    top: 150px;
+    width: 500px;
+    height: 500px;
+}

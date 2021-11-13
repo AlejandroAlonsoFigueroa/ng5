@@ -1,0 +1,25 @@
+<div class = "container">
+
+    <div class = "row">
+
+        <div class = "col">
+
+            <ul>
+                <li >
+                    {{indice+1}}.-  {{empTemp.nombre}} 
+                    
+                    <!--Operador ternario, con la directiva ngStyle-->
+                   <!-- <span [ngStyle] = "{color: empTemp.cargo == 'director' ? 'red': 'black'}">{{empTemp.cargo}}</span> {{empTemp.salario}}-->
+                   <span [ngClass] = "{paraDirectores: empTemp.cargo == 'director'}" >{{empTemp.cargo}}</span> {{empTemp.salario}}
+
+                  
+
+                   <ul>
+                       
+                       
+                   </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

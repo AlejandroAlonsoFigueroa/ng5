@@ -1,0 +1,42 @@
+
+
+<div>
+
+
+    <p>Nombre: {{nombre}}</p>
+    <p>Apellido: {{apellido}}</p>
+    <p>Edad: {{edad}} años</p>
+    <!--<p>Empresa: {{campoEmpresa.value}} </p>-->
+    <p>Empresa: {{campoEmpresa}} </p>
+
+    <!--Escribe la empresa: <input  type = "text" #campoEmpresa (keydown) = "mostrarEmpresa(campoEmpresa.value)" [disabled] = "cuadroHabilitado" /> -->
+
+
+    <!-- Binding bidireccionaal (input) = EventBinding y [value] = PropertieBinding-->
+    <!--Escribe la empresa: <input  type = "text" (input) = "cambiaEmpresa($event)" [value] = "campoEmpresa"/>-->
+
+    <!-- Binding bidireccional con BananaInBox y ngModel-->
+    Escribe la empresa: <input  type = "text"  [(ngModel)] = "campoEmpresa">
+    <br/><br/>
+
+    <!--<input type = "button" value = "Habilitar campo empresa" (click) ="cambiarValorCampo()"/>-->
+
+
+    {{textoDeRegistro}}
+
+    <br/>
+    Registrado<input type = "radio" name = "nRegistro"value = "Sí" [checked] = "cuadroHabilitado" (click) = "mostrarVentanaEmergente($event)"/>
+    <br/>
+    No registrado<input type = "radio" name = "nRegistro"value  ="No" [checked] = "cuadroHabilitado" (click) = "mostrarVentanaEmergente($event)"/>
+    <br/><br/>
+
+    
+    <!--<input id = "miBoton" type = "button" value = "escribirEmpresa" (click) = "mostrarEmpresa(campoEmpresa.value)"/>-->
+
+
+
+    
+
+
+
+</div>

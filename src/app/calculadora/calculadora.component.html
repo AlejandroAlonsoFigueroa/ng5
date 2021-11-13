@@ -1,0 +1,53 @@
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content below * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * Delete the template below * * * * * * * * * * -->
+<!-- * * * * * * * to get started with your project! * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * The content above * * * * * * * * * * * -->
+<!-- * * * * * * * * * * is only a placeholder * * * * * * * * * * -->
+<!-- * * * * * * * * * * and can be replaced. * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+<!-- * * * * * * * * * * End of Placeholder * * * * * * * * * * * -->
+<!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
+
+<h1>Mi calculadora</h1>
+<div class = "agrupador">
+<form>
+
+    <!-- "name" debe ser el mismo que el nombre de la variable en el archivo TypeScript-->
+    Número 1: <input type = "number" name = "n1" [(ngModel)] = "n1">
+    <br/>
+    <br/>
+    Número 2: <input type = "number" name = "n2" [(ngModel)] = "n2">
+    <br/>
+    <br/>
+
+
+    <!-- Binding de tipo evento, en todos los botones-->
+    Número resultado: <input type = "submit" value = "Sumar" (click) = "sumar()">
+    <br/>
+    Número resultado: <input type = "submit" value = "Restar" (click) = "restar()" class = "btn btn-primary">
+    <br/>
+    Número resultado: <input type = "submit" value = "Multiplicar" (click) = "multiplicar()">
+    <br/>
+    Número resultado: <input type = "submit" value = "Dividir" (click) = "dividir()">
+</form>
+
+
+
+
+<p>Resultado: {{resultado}}</p>
+
+
+
+</div> 
+
+
+
+

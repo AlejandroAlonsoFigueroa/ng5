@@ -1,0 +1,28 @@
+1.- Visión
+La realización de una calculadora web de presión que funcione perfectamente, con 
+todas y cada una de las funcionalidades probadas, además de que sea realizada 
+con el paradigma de integración continua, garantizando que todas las necesidades 
+han sido cubiertas.
+1.- Alcance
+1.1.- Justificación
+Se requiere automatizar la obtención de la variable presión, a través de una 
+calculadora web, ya que, para calcular la presión sin esta calculadora, es 
+necesario conocer la formula de presión, y sistemas numéricos, lo cual, no será
+necesario con dicha calculadora web
+El desarrollo del sistema será una aplicación de una sola página (Single page 
+aplication), la cual contendrá una calculadora con tres campos, en uno se 
+mostrará el resultado, en otro se pedirá al usuario la fuerza ejercida 
+perpendicularmente y en el otro la superficie sobre la cual es ejercida la fuerza
+contará con un botón con la leyenda “Calcular presión”, el cual, al ser presionado 
+realizará la operación y mostrará por pantalla el resultado.
+1.2.- Metodología 
+El ciclo de vida del software es el incremental, ya que, si algún recurso llegara a 
+faltar, el sistema se podría “parchar” en la siguiente iteración.
+1.3.- Productos para entregar.
+1.- Una calculadora de presión (probada), realizada en angular, que se encontrará 
+corriendo en el servidor de la clase, en el puerto pertinente.
+1.4.- Criterios de éxito 
+*Los procesos internos de la tiende que se pretendían automatizar, fueron 
+automatizados.
+1.5.- Factores de éxito 
+La calculadora funciona

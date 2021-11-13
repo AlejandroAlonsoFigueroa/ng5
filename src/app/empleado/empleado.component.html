@@ -1,0 +1,54 @@
+
+<p>Nombre del empleado {{nombre}}</p>
+<p>Apellido del empleado {{apellido}}</p>
+<p>Apellido materno del empleado {{apellidoMaterno}}</p>
+<p>Edad del empleado {{edad < 18 ? "Menor de edad": "Mayor de edad"}}</p>
+<p> Empresa del empleado{{empresa}}</p>
+
+
+<br/>
+<br/>
+
+
+<!-- "Event binding" del HTML al TypeScript, se usan los parentesis ();
+    En este ejemplo, el (keydown) recoge  la propiedad "habilitacion 
+    Cuadro" definida en el TypeScrupt y la "llena", en este caso la deshabilita, ya que toma el
+    valor falso 
+
+
+-->
+
+<!-- Sin binding event, ni properties event-->
+<!--Aquí el nombre de la empresa<input type= "text" #miEmpresa (keydown) = 0 [disabled]="habilitacionCuadro">-->
+
+
+
+<!--Binding event-->
+<!--Aquí el nombre de la empresa<input type= "text" (input) = "cambiarEmpresa($event)">  -->
+
+
+
+<!-- Binding bidireccional-->
+Aquí el nombre de la empresa<input type= "text"  [(ngModel)] = "empresa" >  
+
+<br/>
+
+
+<!--<input type = "button" value = "Pulsa aquí" (click) = "llamarEmpresa(miEmpresa.value)"/> -->
+
+
+<p> ¿Está registrado?{{textoDeRegistro}}</p>
+
+
+Registrado<input type= "radio" value = "si" name = "nRegistro" id = "registrado"  [checked] = "usuRegistrado" 
+#estaRegistrado (click) = "setUusuarioRegistrado($event)" >
+<br/>
+No registrado<input type = "radio" name = "nRegistro" value = "no" (click) = "setUusuarioRegistrado($event)">
+
+{{getRegistro()}}
+
+<br/>
+
+<input type = "text" value = "PropiedadConectada">
+
+
